@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Merienda&family=Permanent+Marker&family=Ubuntu&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+}
+/*home*/
+header{
+    width:100%;
+    height:100vh;
+    background:url(/projects/images/laptop2.jpg) 60% 20%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    margin-bottom: 2em;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background: crimson;
+}
+.logo{
+    position: fixed;
+    float: left;
+    margin: 6px 80px;
+    font-weight: 600;
+    color:white;
+    font-size: 40px;
+}
+nav ul{
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    transition: 1s;
+}
+nav .black ul {
+    background:rgb(221, 19, 19);
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a{
+    color:white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.menu a[href^="#"]:hover{
+    color:black;
+}
+.menu{
+    margin-left: 600px;
+}
+header .home_elements{
+    padding-top: 200px;
+    padding-left: 35px; 
+}
+.home_elements .t1{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;   
+}
+.home_elements .t2{
+    font-size: 55px;
+    font-weight: 650;
+    color: white;  
+}
+.home_elements .t3{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+.home_elements button{
+    background-color: crimson;
+    color: white;
+    font-size: 25px;
+    border-color: rgb(15, 15, 15);
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+.home_elements button:hover{
+    background: initial;
+    color:crimson;
+}
+/*ABOUT*/
+.about{
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.title{
+    padding-top: 80px;
+    width:100%;
+    font-weight: 500;
+    text-align: center;
+    font-size: 50px;
+    color: crimson;
+}
+.row {
+    width: 90%;
+    height: 65vh;
+    display: flex;
+}
+.left{
+    flex:50%;
+    text-align: center;
+}
+.right{
+    flex:50%;
+}
+#col2>h2{
+    padding-top: 20px;
+    font-weight:800;  
+}
+#col2>p{
+    padding-right: 10px;
+    font-size: 18px;
+    line-height: 2;
+}
+#col1>img{
+    position: static;
+    height: 370px;
+    width:350px;
+    border-radius: 8px;
+}
+.right button{
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border-color: crimson;
+    border-radius: 5px;
+}
+.right button:hover{
+    background-color: white;
+    color: crimson;  
+}
+/*SKILLS*/
+.skills{
+    padding-top: 60px;
+}
+.rows{
+    width: 100%;
+    height: 70vh;
+}
+.column1{
+    float:left;
+}
+.left1{
+    width:40%;
+    justify-content: center;
+    margin-left:80px;
+}
+.right1{
+    width:50%;
+    padding-top:60px;
+    margin-left: 30px;   
+}
+.left1>p{
+    font-size:18px;
+    line-height: 2;
+}
+.title1{
+    padding-top: 75px;
+    width:100%;
+    font-weight: 500;
+    text-align: center;
+    font-size: 50px;
+    color: crimson;
+}
+.text{
+    padding-top:20px;
+    font-size:25px ;
+    font-weight: 545;
+}
+.rows .right1 .bars{
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.rows .right1 .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+    position: static;
+}
+.rows .right1 .info span{
+    font-size: 18px;
+    font-weight: 545;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.rows .right1 .line{
+    width:85%;
+    height: 5px;
+    background-color:lightgrey;
+    position: relative;
+}
+.rows .right1 .line::before{
+    content:"";
+    position:absolute;
+    width: 85%;
+    height: 5px;
+    background-color: crimson;
+}
+.rows .right1 .html::before{
+    width:90%;
+}
+.rows .right1 .css::before{
+    width:70%;
+}
+.rows .right1 .javascript::before{
+    width:75%;
+}
+.rows .right1 .mysql::before{
+    width:90%;
+}
+.rows .right1 .dsa::before{
+    width:85%;
+}
+
+/*PROJECTS*/
+.projects{
+    padding-top: 60px;   
+}
+.title2{
+    padding-top: 75px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color:crimson;
+}
+.container{
+    display: flex;
+    height:65vh;
+    width: 90vw;
+    overflow-y: auto;
+    border:1px solid rgb(218, 215, 215);
+    margin: 0 50px 0 50px;
+    
+}
+.mar{
+    margin: 10px;
+    padding: 5px;
+    border:1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+}
+[class*=mar]>img{
+    height:300px;
+    width:560px;
+    margin:5px;
+    border-radius: 5px;
+}
+[class*=mar]>h2{
+    text-align: center;
+    font-weight:450;
+    font-size: 30px;
+    color:rgb(116, 135, 158);
+}
+[class*=mar]>button{
+    margin:5px;
+    padding:5px;
+    margin-left: 170px;
+    margin-right:170px;
+    width: 150px;
+    height: 45px;
+    font-size: 20px;
+    background-color:powderblue;
+    color:crimson;
+    border:1px solid powderblue;
+    border-radius: 3px;
+    font-weight: 500;
+}
+.mar>p{
+    margin:5px;
+}
+/*CONTACTS*/
+.title3{
+    margin-top:2em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: crimson;
+}
+.details{
+    display:flex;
+    margin:0px 80px 0px 80px;
+    margin-bottom: 5em;
+}
+.chain1{
+    flex:50%;
+    margin-right: 50px;
+}
+.chain1>p{
+    line-height: 1.5;
+    font-size: 18px;
+}
+.chain2{
+    flex:50%;
+}
+.chain1 .grid-container{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    margin-top:20px;   
+}
+.grid-item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    color:crimson;
+    padding: 6px 0;
+}
+.grid-item4{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    color:crimson;
+    padding: 6px 0;
+}
+.grid-item7{
+    grid-row-start: 5;
+    grid-row-end: 7;
+    color:crimson;
+    padding: 6px 0;
+}
+.grid-container{
+    column-gap: 50px;
+}
+[class*=grid]{
+    font-size: 20px;
+}
+.grid-item3, .grid-item6{
+    margin-bottom: 20px;
+}
+.grid-item2, .grid-item5, .grid-item8{
+    margin-bottom: 5px;
+}
+.grid-item3, .grid-item6, .grid-item9{
+    color: rgb(66, 65, 65);
+}
+.chain2>h3{
+    margin-bottom: 20px;
+}
+input{
+    height: 50px;
+    margin-bottom: 20px;
+    width: 270px;
+    margin-right: 10px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+    font-size: 20px;
+    color:black;
+}
+input:focus{
+    outline: 1px solid rgb(236, 236, 236);
+}
+.subject>input{
+    width: 555px;
+}
+.message>input{
+    width: 555px;
+    height: 80px;
+}
+.chain2>button{
+    background-color: crimson;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    border:1px solid crimson;
+    color: white;
+    font-size: 18px;
+}
+.chain2>button:hover{
+    background-color: white;
+    color: crimson;
+}
